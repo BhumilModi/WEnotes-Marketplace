@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home {
+  background-color: aqua;
+}
+
+@font-face {
+  font-family: 'Source-sans';
+  src: url('../Source_Sans_Pro/OFL.txt');
+}
