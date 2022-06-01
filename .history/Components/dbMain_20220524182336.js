@@ -6,7 +6,9 @@ const style = {
 export default function _dbMain() {
     return (
         <div className={style.wrapper}>
-            <div>DashBoard</div>
+            <button className="border-2">
+                open pdf
+            </button>
         </div>
     )
 }
