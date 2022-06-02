@@ -1,4 +1,4 @@
-import HomeMain from '../component/main'
+import HomeMain from '../components/main'
 
 const style = {
   wrapper: `flex pt-[15px] pl-[80px]`,
