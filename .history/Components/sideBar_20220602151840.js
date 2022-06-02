@@ -1,5 +1,5 @@
 
-import Image from "next/image"
+import Image from "next/Image"
 import { useRouter } from "next/router"
 import HomeIcon from '@mui/icons-material/Home';
 import ViewCarouselOutlinedIcon from '@mui/icons-material/ViewCarouselOutlined';
