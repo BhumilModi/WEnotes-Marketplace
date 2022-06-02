@@ -4,14 +4,14 @@ import Header from '../components/header';
 
 
 const style = {
-  wrapper: `flex`,
-  content: `w-[1200px] pt-[15px]`,
+  wrapper: `flex w-[1200px]`,
+  content: `flex-grow pt-[15px]`,
 }
 
 function MyApp({ Component, pageProps }) {
   return (
     <div className={style.wrapper}>
-      <div className="h-screen w-[250px] sticky top-0">
+      <div className="h-screen sticky top-0">
         <SideBar></SideBar>
       </div>
       <div className={style.content}>

@@ -1,7 +1,7 @@
 import HomeMain from '../components/main'
 
 const style = {
-  wrapper: `flex pt-[15px] pl-[60px]`,
+  wrapper: `flex pt-[15px] pl-[60px] bg-red-400`,
 }
 
 export default function MyApp() {

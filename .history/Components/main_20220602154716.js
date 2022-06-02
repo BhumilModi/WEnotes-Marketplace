@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css'
 
 
 const style = {
-    wrapper: `  pt-[20px] w-[1150px]`,
+    wrapper: `  pt-[20px]`,
     content: ` flex flex-col pt-2`,
     heading: `flex justify-between`,
     headText: `text-[32px] font-font`,
@@ -53,7 +53,7 @@ export default function HomeMain() {
 
     const sliderSettings = {
         arrows: false,
-        slidesToShow: 2.1,
+        slidesToShow: 2.3,
         slidesToScroll: 1,
         infinite: false,
     }

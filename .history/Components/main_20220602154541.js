@@ -8,12 +8,12 @@ import 'slick-carousel/slick/slick-theme.css'
 
 
 const style = {
-    wrapper: `  pt-[20px] w-[1150px]`,
+    wrapper: `  pt-[20px]`,
     content: ` flex flex-col pt-2`,
     heading: `flex justify-between`,
     headText: `text-[32px] font-font`,
     span: `h-[5px] w-[125px] bg-gradient-to-br from-[#0085FF] to-[#00FFC2] rounded-md`,
-    notes: `w-[1100px] pb-5 pt-5`
+    notes: `w-[1000px] pb-5 pt-5`
 }
 
 const notes = [
@@ -53,7 +53,7 @@ export default function HomeMain() {
 
     const sliderSettings = {
         arrows: false,
-        slidesToShow: 2.1,
+        slidesToShow: 2.3,
         slidesToScroll: 1,
         infinite: false,
     }
@@ -65,10 +65,10 @@ export default function HomeMain() {
                     <div className={style.headText}>Newly Published</div>
                     <div className="pr-20 content">
                         <button className="text-[30px] mt-2 text-[#9A9A9A] hover:text-[#000000]" onClick={sliderRef1?.slickPrev}>
-                            <KeyboardArrowLeftRoundedIcon ></KeyboardArrowLeftRoundedIcon>
+                            <KeyboardArrowLeftRoundedIcon className="text-[30px] mt-2 cursor-pointer text-[#9A9A9A] hover:text-[#000000]"></KeyboardArrowLeftRoundedIcon>
                         </button>
                         <button className="text-[30px] mt-2 text-[#9A9A9A] hover:text-[#000000]" onClick={sliderRef1?.slickNext}>
-                            <KeyboardArrowRightRoundedIcon ></KeyboardArrowRightRoundedIcon>
+                            <KeyboardArrowRightRoundedIcon className="text-[30px] mt-2 cursor-pointer text-[#9A9A9A] hover:text-[#000000]"></KeyboardArrowRightRoundedIcon>
                         </button>
                     </div>
                 </div>

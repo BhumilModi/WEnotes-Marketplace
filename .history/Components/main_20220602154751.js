@@ -53,7 +53,7 @@ export default function HomeMain() {
 
     const sliderSettings = {
         arrows: false,
-        slidesToShow: 2.1,
+        slidesToShow: 2.3,
         slidesToScroll: 1,
         infinite: false,
     }

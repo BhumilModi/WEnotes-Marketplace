@@ -4,7 +4,7 @@ import Header from '../components/header';
 
 
 const style = {
-  wrapper: `flex`,
+  wrapper: `flex h-screen w-screen`,
   content: `w-[1200px] pt-[15px]`,
 }
 

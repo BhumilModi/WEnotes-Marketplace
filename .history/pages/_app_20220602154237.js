@@ -4,8 +4,8 @@ import Header from '../components/header';
 
 
 const style = {
-  wrapper: `flex`,
-  content: `w-[1200px] pt-[15px]`,
+  wrapper: `flex h-screen w-screen`,
+  content: `flex-1 pt-[15px]`,
 }
 
 function MyApp({ Component, pageProps }) {

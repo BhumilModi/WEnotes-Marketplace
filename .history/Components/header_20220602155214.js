@@ -9,7 +9,7 @@ const style = {
     searchIcon: `ml-3 mt-2`,
     search: `w-[90%] font-[16px] focus:outline-none pl-[10px] px-1`,
     publish: `text-[22px] pl-[300px] pr-[50px] text-[#9A9A9A] hover:text-[#0085FF] cursor-pointer`,
-    button: `h-[40px] w-[150px] flex justify-center items-center  bg-[#0085FF] py-[5px] px-[20px] rounded-3xl `,
+    button: `h-[40px] w-[150px] flex justify-center items-center  bg-[#0085FF] py-[5px] pl-[20px] rounded-3xl `,
     id: `h-[40px] w-[150px] flex justify-center items-center bg-[#ffffff] border-2 border-[#0085FF] py-[5px] px-[20px] rounded-3xl`,
 }
 
