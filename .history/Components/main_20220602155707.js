@@ -63,7 +63,7 @@ export default function HomeMain() {
             <div className={style.content} >
                 <div className={style.heading}>
                     <div className={style.headText}>Newly Published</div>
-                    <div className="pr-[25px] content">
+                    <div className="pr-[15px] content">
                         <button className="text-[30px] mt-2 text-[#9A9A9A] hover:text-[#000000]" onClick={sliderRef1?.slickPrev}>
                             <KeyboardArrowLeftRoundedIcon ></KeyboardArrowLeftRoundedIcon>
                         </button>
@@ -85,7 +85,7 @@ export default function HomeMain() {
                 </div>
                 <div className={style.heading}>
                     <div className={style.headText}>Best Seller</div>
-                    <div className="pr-[25px] content">
+                    <div className="pr-[15px] content">
                         <button className="text-[30px] mt-2 text-[#9A9A9A] hover:text-[#000000]" onClick={sliderRef2?.slickPrev}>
                             <KeyboardArrowLeftRoundedIcon></KeyboardArrowLeftRoundedIcon>
                         </button>
