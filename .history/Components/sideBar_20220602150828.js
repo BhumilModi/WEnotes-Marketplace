@@ -1,9 +1,9 @@
 
 import Image from "next/Image"
-import { useRouter } from "next/router"
 import HomeIcon from '@mui/icons-material/Home';
 import ViewCarouselOutlinedIcon from '@mui/icons-material/ViewCarouselOutlined';
 import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
+import { useRouter } from "next/router"
 import logo from "../public/images/wenotes.svg"
 
 const style = {
