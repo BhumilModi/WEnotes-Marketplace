@@ -1,4 +1,4 @@
-import DbBought from "../../Components/dbBought"
+import _dbBought from "../../Components/dbBought"
 
 const style = {
     wrapper: `flex pt-[15px] pl-[80px]`,
@@ -7,7 +7,7 @@ const style = {
 export default function MyCollection() {
     return (
         <div className={style.wrapper}>
-            <DbBought></DbBought>
+            <_dbBought></_dbBought>
         </div>
     )
 }

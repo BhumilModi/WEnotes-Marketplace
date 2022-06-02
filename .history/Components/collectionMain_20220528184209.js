@@ -60,7 +60,7 @@ const notes = [
     },
 ]
 
-export default function CollectionMain() {
+export default function _collectionMain() {
     return (
         <div className={style.wrapper}>
             <div className={style.heading}>

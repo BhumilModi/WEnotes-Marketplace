@@ -59,7 +59,7 @@ const style = {
     item: `pt-3`
 }
 
-export default function DbPublished() {
+export default function _dbPublished() {
     const router = useRouter()
     return (
         <div className={style.wrapper}>

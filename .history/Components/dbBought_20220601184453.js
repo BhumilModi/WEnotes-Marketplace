@@ -1,29 +1,7 @@
 import { useRouter } from "next/dist/client/router"
-import _dbNotes from "./dblistCard"
+import BoughtNotes from "./boughtCard"
 
 const notes = [
-    {
-        image: "/images/notes.png",
-        header: "Physics Notes",
-        author: "Author: #ox73271021Mdsoa",
-        description: "This are physics notes from chapter 1 of textbook class 12 Electromagnetism...",
-        price: "1.8 MAT",
-        holder1: "0x387fD6B74E866D129356A3DdBd480939051F264f",
-        holder2: "none",
-        h1price: "2 MAT",
-        h2price: "",
-    },
-    {
-        image: "/images/notes.png",
-        header: "Physics Notes",
-        author: "Author: #ox73271021Mdsoa",
-        description: "This are physics notes from chapter 1 of textbook class 12 Electromagnetism...",
-        price: "1.8 MAT",
-        holder1: "0x387fD6B74E866D129356A3DdBd480939051F264f",
-        holder2: "0xb08e6e59fe4eaF71f80d538d313157eAEc2e589f",
-        h1price: "1.8 MAT",
-        h2price: "1.4 MAT",
-    },
     {
         image: "/images/notes.png",
         header: "Physics Notes",
@@ -34,6 +12,40 @@ const notes = [
         holder2: "none",
         h1price: "",
         h2price: "",
+        request1: "0x387fD6B74E866D129356A3DdBd480939051F264f",
+        request2: "0x387fD6B74E866D129356A3DdBd480939051F264f",
+        r1price: "1.8 MAT",
+        r2price: "1.4MAT",
+    },
+    {
+        image: "/images/notes.png",
+        header: "Physics Notes",
+        author: "Author: #ox73271021Mdsoa",
+        description: "This are physics notes from chapter 1 of textbook class 12 Electromagnetism...",
+        price: "1.8 MAT",
+        holder1: "0x387fD6B74E866D129356A3DdBd480939051F264f",
+        holder2: "0xb08e6e59fe4eaF71f80d538d313157eAEc2e589f",
+        h1price: "1.8 MAT",
+        h2price: "1.4 MAT",
+        request1: "0x387fD6B74E866D129356A3DdBd480939051F264f",
+        request2: "0x387fD6B74E866D129356A3DdBd480939051F264f",
+        r1price: "1.8 MAT",
+        r2price: "1.4MAT",
+    },
+    {
+        image: "/images/notes.png",
+        header: "Physics Notes",
+        author: "Author: #ox73271021Mdsoa",
+        description: "This are physics notes from chapter 1 of textbook class 12 Electromagnetism...",
+        price: "1.8 MAT",
+        holder1: "0x387fD6B74E866D129356A3DdBd480939051F264f",
+        holder2: "0xb08e6e59fe4eaF71f80d538d313157eAEc2e589f",
+        h1price: "1.8 MAT",
+        h2price: "1.4 MAT",
+        request1: "0x387fD6B74E866D129356A3DdBd480939051F264f",
+        request2: "0x387fD6B74E866D129356A3DdBd480939051F264f",
+        r1price: "1.8 MAT",
+        r2price: "1.4MAT",
     },
     {
         image: "/images/notes.png",
@@ -41,10 +53,14 @@ const notes = [
         author: "#ox73271021Mdsoa",
         description: "This are physics notes from chapter 1 of textbook class 12 Electromagnetism...",
         price: "1.8 MAT",
-        holder1: "0x387fD6B74E866D129356A3DdBd480939051F264f",
-        holder2: "0xb08e6e59fe4eaF71f80d538d313157eAEc2e589f",
-        h1price: "1.8 MAT",
-        h2price: "1.4 MAT",
+        holder1: "none",
+        holder2: "none",
+        h1price: "",
+        h2price: "",
+        request1: "0x387fD6B74E866D129356A3DdBd480939051F264f",
+        request2: "0x387fD6B74E866D129356A3DdBd480939051F264f",
+        r1price: "1.8 MAT",
+        r2price: "1.4MAT",
     },
 ]
 
@@ -59,17 +75,17 @@ const style = {
     item: `pt-3`
 }
 
-export default function DbPublished() {
+export default function _dbPublished() {
     const router = useRouter()
     return (
         <div className={style.wrapper}>
             <div className={style.content}>
                 <div className={style.main}>
                     <div className={style.header}>
-                        <div className={style.headerText} onClick={() => { router.push("/DashBoard/published") }}>
+                        <div className={style.headerText2} onClick={() => { router.push("/DashBoard/published") }}>
                             Published
                         </div>
-                        <div className={style.headerText2} onClick={() => { router.push("/DashBoard/bought") }}>
+                        <div className={style.headerText} onClick={() => { router.push("/DashBoard/bought") }}>
                             Bought
                         </div>
                     </div>
@@ -77,7 +93,7 @@ export default function DbPublished() {
                         {
                             notes.map((note, index) => (
                                 <div key={index} className={style.item}>
-                                    <_dbNotes img={note.image} header={note.header} description={note.description} author={note.author} price={note.price} holder1={note.holder1} holder2={note.holder2} h1price={note.h1price} h2price={note.h2price}></_dbNotes>
+                                    <BoughtNotes img={note.image} header={note.header} description={note.description} author={note.author} price={note.price} request1={note.request1} request2={note.request2} r1price={note.r1price} r2price={note.r2price}></BoughtNotes>
                                 </div>
                             ))
                         }

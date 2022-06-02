@@ -47,7 +47,7 @@ const notes = [
     },
 ]
 
-export default function HomeMain() {
+export default function _homeMain() {
     const [sliderRef1, setSliderRef1] = useState(null)
     const [sliderRef2, setSliderRef2] = useState(null)
 

@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import SideBar from "../Components/sideBar"
+import _sideBar from "../Components/sideBar"
 import Header from '../Components/header';
 
 
@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className={style.wrapper}>
       <div className="h-screen sticky top-0">
-        <SideBar></SideBar>
+        <_sideBar></_sideBar>
       </div>
       <div className={style.content}>
         <Header></Header>
